@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styleve.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="ev.js" defer></script>
+    <title>Carrito de Compras</title>
+</head>
+<body>
+    <header>
+        <div class="top-section">
+            <div class="logo">
+                <img src="Logo.png" alt="Panam Logo">
+            </div>
+            <div class="search-menu-container"><br>
+                <div class="search-bar">
+                    <img class="buscar" src="search.png" alt="Busqueda">
+                </div>
+                <br>
+                <nav class="menu">
+                    <div class="menu-item">
+                        Tenis
+                        <ul class="submenu">
+                            <li><a href="#">Hombre</a></li>
+                            <li><a href="#">Mujer</a></li>
+                            <li><a href="#">Niños</a></li>
+                            <li><a href="#">Especial</a></li>
+                        </ul>
+                    </div>
+                    <div class="menu-item">
+                        Descuentos
+                        <ul class="submenu">
+                            <li><a href="#">Ofertas</a></li>
+                            <li><a href="#">Rebajas</a></li>
+                        </ul>
+                    </div>
+                    <a href="#" class="menu-item">Ropa</a>
+                    <a href="#" class="menu-item">Accesorios</a>
+                </nav>
+            </div>
+            <!-- Botones del carrito y opciones -->
+            <div class="cart-buttons">
+                <button id="cart-button-2" class="cart-btn">
+                    <img src="Opciones.png" alt="Opciones" class="button-icon">
+                </button>
+                <button id="cart-button-1" class="cart-btn">
+                    <img src="cart.png" alt="Carrito" class="button-icon">
+                </button>
+            </div>
+        </div>
+    </header>
+    
+    <hr class="separador">
+
+    <!-- Contenedor para el carrito (inicialmente oculto) -->
+    <div id="cart-window" class="hidden">
+        <h2>Carrito de Compras</h2>
+        <p>Tu carrito de compras está vacio!</p>
+    </div>
+
+    <!-- Contenedor para las opciones (inicialmente oculto) -->
+    <div id="options-window" class="hidden">
+        <h2>Opciones</h2>
+        <br>
+      <center> 
+        <a href="">Cuenta</a><br><br>
+        <a href="">Direcciones</a><br><br>
+        <a href="">Metodos de pago</a><br><br>
+        <a href="">Sucursales</a><br><br>
+        <a href="">Lista de deseados</a><br><br>
+        <a href="">Servicio al cliente</a><br><br>
+        <a href=""></a>
+      </center>
+    </div>
+
+    <main>
+        <section class="products">
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="Tenis c.png" alt="Producto">
+                    <p><strong>$650.00</strong></p>
+                </div>
+                <div class="product-info">
+                    <h2>PANAM Astor Barrio</h2>
+                    <p>Calzado Casual Choclo 100% Nacional, corte sintético y forro Textil, suela sintética. Nueva silueta panam, retro, deportivo y de moda, tipo Samba. Ideal para agregar a tu closet con detalles modernos y exclusivos de panam.</p>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="Tenis r.png" alt="Producto">
+                    <p><strong>$650.00</strong></p>
+                </div>
+                <div class="product-info">
+                    <h2>PANAM Bota Meztil Cariño</h2>
+                    <p>Calzado Casual Bota 100% Nacional, corte sintético y forro Textil, suela sintética.
+                        Panam 100% mexicano, bota meztli ahora con mucho color. Diseñado para ser diferente y luzcas diferente. Los colores combinados en este calzado hacen que sea uno de nuestros modelos más auténticos dentro de la colección 2024.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <img id="theme-toggle" src="luna.png" alt="Cambiar Tema" class="theme-toggle-icon">
+
+<!-- Botón de Ayuda -->
+<div id="help-button">
+    <img src="ayuda.png" alt="Ayuda">
+</div>
+
+<!-- Ventana de Ayuda -->
+<div id="help-window" class="hidden">
+    <h3>¿En qué podemos ayudarte?</h3>
+    <ul>
+        <li><a href="#" id="option-about">¿Quiénes somos?</a></li>
+        <li><a href="#" id="option-cart">¿Cómo agregar un producto al carrito?</a></li>
+        <li><a href="#" id="option-contact">¿Ocupas más ayuda? Te contactamos con un asesor</a></li>
+    </ul>
+    <div id="help-content"></div> <!-- Aquí se desplegará la información -->
+</div>
+
+
+
+
+
+
+<div class="message" id="idleMessage">
+    ¡Eh! ¿Sigues ahi?
+  </div>
+
+
+</body>
+</html>
